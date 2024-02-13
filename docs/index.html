@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi bebu :)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body>
+        <div class="valentines-day-card">
+            <input id="open" type="checkbox">
+            <label class="open" for="open"></label>
+            <div class="card-front">
+                <div class="note">For my Bebu</div>
+            </div>
+
+            <div class="card-inside">
+                <div class="text-one">Happy
+                </div>
+                <div class="heart"></div>
+                <div class="smile"></div>
+                <div class="eyes"></div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var openCheckbox = document.getElementById("open");
+                var openLabel = document.querySelector(".open");
+
+                var clickCount = 0;
+
+                openLabel.addEventListener("click", function() {
+                    clickCount++;
+
+                    if (clickCount === 2) {
+                        // Redirect to YouTube video
+                        window.location.href = "https://youtu.be/8XMZ2RPs_fs"; // Replace VIDEO_ID with the actual ID of the YouTube video
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
